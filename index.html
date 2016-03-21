@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>LAF by rymc</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>LAF</h1>
+        <h2>Linux Application Firewall</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/rymc/LAF/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/rymc/LAF/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/rymc/LAF" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="laf" class="anchor" href="#laf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LAF</h1>
+
+<p>Linux Application Firewall (LAF) is an application firewall for Linux. It allows users full control over which applications are allowed to communicate over the network.</p>
+
+<h2>
+<a id="alternative-to-laf" class="anchor" href="#alternative-to-laf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alternative to LAF</h2>
+
+<ul>
+<li>
+<a href="https://github.com/subgraph/fw-daemon">Subgraph Firwall</a>(Proc Method)</li>
+<li>
+<a href="http://douaneapp.com/">Douaneapp</a> (Kernel Module)</li>
+<li>
+<a href="http://sourceforge.net/projects/lavenderfw">Lavender Firewall</a> (Proc Method)</li>
+<li>
+<a href="https://github.com/sha0coder/Linux-Application-Firewall">Linux Application Firewall</a> - Development 1 month. (Kernel Module)</li>
+</ul>
+
+<h3>
+<a id="abandoned-projects" class="anchor" href="#abandoned-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Abandoned Projects</h3>
+
+<ul>
+<li>
+<a href="http://sourceforge.net/projects/leopardflower/">Leopard Flower</a> (Proc Method)
+
+<ul>
+<li>
+<a href="https://github.com/andreizilla/leopard-flower-firewall">active</a> Fork of Leopard, 14 days activity.</li>
+<li>
+<a href="https://github.com/ethanwilloner/Overwatch">Overwatch</a> Fork of Leopard, Stalled 6 months.</li>
+</ul>
+</li>
+<li>
+<a href="http://tuxguardian.sourceforge.net/">TuxGaurdian</a> (Kernel Module)</li>
+<li>
+<a href="http://pgrd.sourceforge.net/">Program Guard</a> (Kernel Module)</li>
+<li><a href="http://fireflier.sourceforge.net/index.html">FireFlier</a></li>
+<li>
+<a href="https://github.com/jkaessens/afirewall">afirewall</a> - Development, Stalled 2 years. (Proc Method)</li>
+</ul>
+
+<h3>
+<a id="relatedinteresting-things" class="anchor" href="#relatedinteresting-things" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related/Interesting Things</h3>
+
+<ul>
+<li>AppArmor - <a href="http://wiki.apparmor.net/index.php/AppArmor_Core_Policy_Reference#Network_rules">Specific Networking Option</a>
+</li>
+<li>SE Linux</li>
+<li>
+<a href="http://www.rsbac.org/documentation/administration_examples/network_access_control?s=nettemp">RSBAC</a> provides a network template<br>
+</li>
+<li>iptables with group matching <a href="https://bbs.archlinux.org/viewtopic.php?pid=1265910#p1265910">ArchForum</a>
+</li>
+<li>
+<a href="http://cr.yp.to/unix/disablenetwork.html">DisableNetwork</a> document listing possibilities.</li>
+<li><a href="http://www.vuurmuur.org/trac/">Vuurmuur Firewall</a></li>
+<li>P <a href="https://github.com/gamelinux/alcanfw">alcanfw</a> - Perl script.</li>
+<li>
+<a href="http://marc.info/?t=140685618600001&amp;r=1&amp;w=2">Maillist Talk about Hone and snet</a>
+
+<ul>
+<li>
+<a href="https://lkml.org/lkml/2011/5/5/132">snet</a> linux security module.</li>
+<li>
+<a href="https://github.com/HoneProject/Linux-Sensor">HoneProject</a> Monitoring connections and mapping to PID.</li>
+</ul>
+</li>
+<li>
+<a href="http://tomoyo.sourceforge.jp/2.5/policy-specification/domain-policy-syntax.html.en#network_inet">Tomoyo</a> inet options.</li>
+<li>
+<a href="http://caitsith.sourceforge.jp/">caitsith</a> Access restriction module.</li>
+<li>
+<a href="http://sourceforge.net/projects/libseccomp/">libseccomp</a> Syscall filtering lib.</li>
+<li><a href="http://kernsec.org/wiki/index.php/Projects">kernsec</a></li>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>LAF requires libnetfilter-queue, it's dependency libnfnetlink and a kernel 2.6.14 or later.</p>
+
+<pre><code>sudo apt-get install libnfnetlink-dev libnetfilter-queue-dev
+</code></pre>
+
+<h2>
+<a id="help-needed" class="anchor" href="#help-needed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help Needed</h2>
+
+<p>If you are a C or a Python developer you can help us improve LAF. Feel free to take a look at the bug tracker for some tasks to do.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>LAF is licensed under GPLv3 license. See <a href="src/LICENSE">LICENSE</a> for more information.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
